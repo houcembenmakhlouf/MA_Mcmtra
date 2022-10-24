@@ -1,13 +1,12 @@
 #ignore database and preprocessed data
 
-/data/db_hbm/
-!/data/db_hbm/temp
-/exps/
-!/exps/temp
-/features/
-!/features/temp
-/venv/
-!/venv/temp
-/data/clusters_data/
-!/data/clusters_data/temp
-
+data/db_hbm/*
+!data/db_hbm/temp.txt
+exps/*
+!exps/temp.txt
+features/*
+!features/temp.txt
+venv/*
+!venv/temp.txt
+data/clusters_data/*
+!data/clusters_data/temp.txt
