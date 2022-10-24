@@ -1,0 +1,31 @@
+exp_name: hbmnet_tv
+
+data:
+  dataset: hbmdataset
+  data_path: data/db_hbm/prepared_data_w_likes.p  # prepared_data_v2.p
+  txt_feat_path: features/twitterxlmrobertabase_text_embed.p
+  img_feat_path: features/imagenet_img_embed_v2.p
+  normalize: False
+  val_percent: 0.15
+  test_percent: 0.1
+  batch_size: 128
+  num_workers: 8
+  limit_n_replies: 100
+  limit_n_quotes: 100
+  use_img_feat: True
+  use_like_feat: False
+
+# models: hbmnet | hbmnet_t | hbmnet_tv | hbmnet_att | hbmnet_att_like
+model: hbmnet_tv
+
+training:
+  multilabel: False
+  epochs: 5
+  patience: 20
+  lr_patience: 5
+  init_lr: 0.0001
+  output_path: exps
+  save_every: 50
+  cv:
+    stratified: True
+    k_folds: 5

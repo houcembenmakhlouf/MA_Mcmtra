@@ -1,0 +1,13 @@
+#ignore database and preprocessed data
+
+/data/db_hbm/
+!/data/db_hbm/temp
+/exps/
+!/exps/temp
+/features/
+!/features/temp
+/venv/
+!/venv/temp
+/data/clusters_data/
+!/data/clusters_data/temp
+
