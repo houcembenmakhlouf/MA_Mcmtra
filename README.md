@@ -50,8 +50,6 @@ For each experiment, a separate folder is created in the ./exps with Tensorboard
 
 
 
-
-
 This project uses the paper (Paper is available on arXiv: https://arxiv.org/abs/2106.08829) as reference.
 # A Fair and Comprehensive Comparison of Multimodal Tweet Sentiment Analysis Methods
 
