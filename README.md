@@ -1,4 +1,6 @@
-# Master thesis
+# Multilingual and Cross-Modal Embedded Representation for Tweets Aggregation
+## Abstract
+Twitter data has been useful in different tasks such as topic classification and sentiment analysis. The Twitter’s raw data, however, is multilingual and presents noise and is shorttext. In order to catch useful information from tweet, the high-dimensional raw data should be encoded in lower-dimensional representations. In recent years, different aspects were the center of research to enhance the meaningfulness of the tweet representations like including different modalities of data such as: text, audio, images, and videos. However, there are not many works about multilingual multimodal representations due to lack of large high-quality datasets. In this thesis, I propose a new model to learn multilingual and multimodal representations of individual tweets by leveraging a topic classification task. My model not only uses traditional modalities, like language and vision, but also profits from Twitter-specific modalities such as replies and quotes. My thesis first shows that adding replies and quotes texts and images features to the tweet features improves the model’s accuracy by at least 3%. My work also shows that combining multimodal and multilingual features by using attention mechanisms increases the meaningfulness of tweet’s related input (tweet, its replies and quotes) representation by preserving the semantic closeness of the input data and increasing the accuracy with additional 5%. The results demonstrate how different multimodal and multilingual embeddings within each document can be learned in an aligned manner in order to push similar classes close to each other. I anticipate my thesis to be another step for more works that want to combine cross modals for Twitter data in several languages in order to enhance a tweet representation.
 
 
 
@@ -8,7 +10,7 @@
 
 
 
---------------------------------------Old version--------------------------------------------------
+This project uses the paper (Paper is available on arXiv: https://arxiv.org/abs/2106.08829) as reference.
 # A Fair and Comprehensive Comparison of Multimodal Tweet Sentiment Analysis Methods
 
 The repository for the splits and code used in the paper
