@@ -10,7 +10,7 @@ This project resulted in "MCMTRA dataset". Refer to https://github.com/houcemben
 ## Models
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/45092804/197520335-5e307611-2ea4-4d70-bc9f-d8c4c7645b79.png" width="500" />
+  <img src="https://user-images.githubusercontent.com/45092804/197520335-5e307611-2ea4-4d70-bc9f-d8c4c7645b79.png" width="600" />
 </p>
 
 
