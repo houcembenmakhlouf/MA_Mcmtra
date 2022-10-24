@@ -45,7 +45,12 @@ pip3 install -r requirements.txt
 
 ##training 
 We provided scripts for training the proposed model on "MCMTRA dataset" . You can start training by running the ```train_cv.py```(with cross-validation)
-For each experiment, a separate folder is created in the ./exps with Tensorboard logs, text logs, visualization and model's checkpoints. You can specify another path in the [config.yml]: https://github.com/houcembenmakhlouf/MA_MCMTRA/blob/master/config.yaml (see EXPS_PATH variable).
+For each experiment, a separate folder is created in the ./exps with Tensorboard logs, text logs, visualization and model's checkpoints. You can specify another path in the [config.yml](https://github.com/houcembenmakhlouf/MA_MCMTRA/blob/master/config.yaml) (see EXPS_PATH variable).
+
+
+
+
+
 
 This project uses the paper (Paper is available on arXiv: https://arxiv.org/abs/2106.08829) as reference.
 # A Fair and Comprehensive Comparison of Multimodal Tweet Sentiment Analysis Methods
