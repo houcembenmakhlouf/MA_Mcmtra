@@ -13,6 +13,7 @@ This project resulted in "MCMTRA dataset". Refer to https://github.com/houcemben
 the project uses pre-trained models ```XLM-RoBERTa``` (https://huggingface.co/docs/transformers/model_doc/xlm-roberta) and ```ResNet-50``` (https://arxiv.org/abs/1512.03385) for extracting textual and visual features respectively.
 
 ## Models
+<table class="center">
 <center>
   
 | Model | Description |
@@ -27,6 +28,7 @@ hbmnet_attention_likes | same as ”hbmnet” with both attention mechanisms and
 hbmnet_w_double_attention |same as ”hbmnet” with both attention mechanisms|
 
 </center>
+</table> 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/45092804/197520335-5e307611-2ea4-4d70-bc9f-d8c4c7645b79.png" width="600" />
