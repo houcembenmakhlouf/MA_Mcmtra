@@ -9,11 +9,13 @@ pip3 install -r requirements.txt
 ```
 ## Data collection
 This project resulted in "MCMTRA dataset". Refer to https://github.com/houcembenmakhlouf/MA_osint_gatherer repository which provides a platform for data collection process from Twitter API. 
+
 ## Embeddings extraction
-the project uses pre-trained models ```XLM-RoBERTa``` (https://huggingface.co/docs/transformers/model_doc/xlm-roberta) and ```ResNet-50``` (https://arxiv.org/abs/1512.03385) for extracting textual and visual features respectively.
+the project uses pre-trained models ```XLM-RoBERTa``` (https://huggingface.co/docs/transformers/model_doc/xlm-roberta) and ```ResNet-50``` (https://arxiv.org/abs/1512.03385) for extracting textual and visual features respectively. The embbeding extraction process is insured by running the files ```extract_txt_feats.py``` and ```extract_img_feats``` under the folder ```feature_extraction```.
+
 
 ## Models
-<table class="center">
+The table below show all models that were considered in this project. 
 <center>
   
 | Model | Description |
@@ -27,14 +29,15 @@ hbmnet_w_attention | same as ”hbmnet” with attention between tweet and inter
 hbmnet_attention_likes | same as ”hbmnet” with both attention mechanisms and number of likes feature|
 hbmnet_w_double_attention |same as ”hbmnet” with both attention mechanisms|
 
-</center>
-</table> 
+The best model is shown in the figure below:
+  
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/45092804/197520335-5e307611-2ea4-4d70-bc9f-d8c4c7645b79.png" width="600" />
 </p>
 
-
+</center>
 
 
 
