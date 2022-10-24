@@ -2,11 +2,7 @@
 This repository provides code for this master thesis:
 ## Abstract
 Twitter data has been useful in different tasks such as topic classification and sentiment analysis. The Twitter’s raw data, however, is multilingual and presents noise and is shorttext. In order to catch useful information from tweet, the high-dimensional raw data should be encoded in lower-dimensional representations. In recent years, different aspects were the center of research to enhance the meaningfulness of the tweet representations like including different modalities of data such as: text, audio, images, and videos. However, there are not many works about multilingual multimodal representations due to lack of large high-quality datasets. In this thesis, I propose a new model to learn multilingual and multimodal representations of individual tweets by leveraging a topic classification task. My model not only uses traditional modalities, like language and vision, but also profits from Twitter-specific modalities such as replies and quotes. My thesis first shows that adding replies and quotes texts and images features to the tweet features improves the model’s accuracy by at least 3%. My work also shows that combining multimodal and multilingual features by using attention mechanisms increases the meaningfulness of tweet’s related input (tweet, its replies and quotes) representation by preserving the semantic closeness of the input data and increasing the accuracy with additional 5%. The results demonstrate how different multimodal and multilingual embeddings within each document can be learned in an aligned manner in order to push similar classes close to each other. I anticipate my thesis to be another step for more works that want to combine cross modals for Twitter data in several languages in order to enhance a tweet representation.
-## Setting up an environment
-This framework is built using Python 3.6 and relies on the PyTorch 1.4.0+. The following command installs all necessary packages:
-```
-pip3 install -r requirements.txt
-```
+
 ## Data collection
 This project resulted in "MCMTRA dataset". Refer to https://github.com/houcembenmakhlouf/MA_osint_gatherer repository which provides a platform for data collection process from Twitter API. 
 
@@ -29,19 +25,27 @@ hbmnet_w_attention | same as ”hbmnet” with attention between tweet and inter
 hbmnet_attention_likes | same as ”hbmnet” with both attention mechanisms and number of likes feature|
 hbmnet_w_double_attention |same as ”hbmnet” with both attention mechanisms|
 
+</center>
+
 The best model is shown in the figure below:
+
+<center>
   
-
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/45092804/197520335-5e307611-2ea4-4d70-bc9f-d8c4c7645b79.png" width="600" />
 </p>
 
 </center>
 
+## Setting up an environment
+This framework is built using Python 3.6 and relies on the PyTorch 1.4.0+. The following command installs all necessary packages:
+```
+pip3 install -r requirements.txt
+```
 
-
-
+##training 
+We provided scripts for training the proposed model on "MCMTRA dataset" . You can start training by running the ```train_cv.py```(with cross-validation)
+For each experiment, a separate folder is created in the ./exps with Tensorboard logs, text logs, visualization and model's checkpoints. You can specify another path in the [config.yml]: https://github.com/houcembenmakhlouf/MA_MCMTRA/blob/master/config.yaml (see EXPS_PATH variable).
 
 This project uses the paper (Paper is available on arXiv: https://arxiv.org/abs/2106.08829) as reference.
 # A Fair and Comprehensive Comparison of Multimodal Tweet Sentiment Analysis Methods
